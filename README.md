@@ -3,5 +3,7 @@ A clone of a clone of clone of [1024](https://play.google.com/store/apps/details
 
 ### Screenshot
 
+[![Screenshot](https://raw.githubusercontent.com/ngzhian/any2048/master/ss-oswell-win.jpg)](https://raw.githubusercontent.com/ngzhian/any2048/master/ss-oswell-win.jpg)
+
 ## License
 2048 is licensed under the MIT license.
