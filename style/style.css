@@ -1,0 +1,32 @@
+#urls span {
+	background:none repeat scroll 0% 0% #BBADA0;
+	padding:0 10px;
+}
+
+#urls span a {
+	color: white;
+	text-decoration:none;
+}
+
+#urls span:hover {
+	background:none repeat scroll 0% 0% #A6988B;
+	padding:0 10px;
+	color: #EEE4DA;
+}
+
+#suggestions span {
+	background:none repeat scroll 0% 0% #BBADA0;
+	padding:0 10px;
+	color: white;
+}
+
+#suggestions span a {
+	color: white;
+	text-decoration:none;
+}
+
+#suggestions span:hover {
+	background:none repeat scroll 0% 0% #A6988B;
+	padding:0 10px;
+	color: #EEE4DA;
+}
