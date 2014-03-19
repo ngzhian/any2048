@@ -5,6 +5,7 @@
   <title>2048</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link href="style/style.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -25,7 +26,7 @@
     <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
     <p></p>
     <p>Enter the url of any images and press GO!</p>
-    <form>
+    <form id="urls">
       <input id="picfor2" type="text" value="img/2.png">
       <input id="picfor4" type="text" value="img/4.png">
       <input id="picfor8" type="text" value="img/8.png">
@@ -37,8 +38,13 @@
       <input id="picfor512" type="text" value="img/512.png">
       <input id="picfor1024" type="text" value="img/1024.png">
       <input id="picfor2048" type="text" value="img/2048.png">
-      <span onClick="getPic()" style="background:none repeat scroll 0% 0% #BBADA0; padding:0 10px; color: white">GO</span>
+      <span onClick="getPic()"><a>GO</a></span>
     </form>
+
+    <div id="suggestions">
+    <p>Out of ideas? Try these themes!</p>
+    <span onClick="fillWithPokemon()"><a>Pokemon</a></span>
+    </div>
 
     <div class="game-container">
       <div class="game-message">
@@ -92,13 +98,33 @@
 
   <script type="text/javascript">
   var pictures = [];
-    function getPic() {
-      for (var i = 0; i < 10; i++) {
-        var power = Math.pow(2,(i+1));
-        pictures[i] = document.getElementById('picfor' + power).value;
-      }
+  function getPic() {
+    for (var i = 0; i < 10; i++) {
+      var power = Math.pow(2,(i+1));
+      pictures[i] = document.getElementById('picfor' + power).value;
     }
-    getPic();
+  }
+  getPic();
+
+  var pokemonLinks = ["http://cdn.bulbagarden.net/upload/7/76/Spr_5b_001.png",
+  "http://cdn.bulbagarden.net/upload/0/0a/Spr_5b_004.png",
+  "http://cdn.bulbagarden.net/upload/5/59/Spr_5b_007.png",
+  "http://cdn.bulbagarden.net/upload/e/e1/Spr_5b_002.png",
+  "http://cdn.bulbagarden.net/upload/0/09/Spr_5b_005.png",
+  "http://cdn.bulbagarden.net/upload/0/0b/Spr_5b_008.png",
+  "http://cdn.bulbagarden.net/upload/6/68/Spr_5b_003_m.png",
+  "http://cdn.bulbagarden.net/upload/e/e1/Spr_5b_006.png",
+  "http://cdn.bulbagarden.net/upload/3/3d/Spr_5b_009.png",
+  "http://cdn.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png",
+  "http://cdn.bulbagarden.net/upload/d/d0/Spr_5b_026_m.png"];
+
+  function fillWithPokemon() {
+    for (var i = 0; i <= 10; i++) {
+        var power = Math.pow(2,(i+1));
+        document.getElementById('picfor' + power).value = pokemonLinks[i];
+      }
+      getPic();
+  }
   </script>
   <script src="js/animframe_polyfill.js"></script>
   <script src="js/keyboard_input_manager.js"></script>
