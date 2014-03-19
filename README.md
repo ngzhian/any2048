@@ -3,5 +3,7 @@ A clone of a clone of clone of [1024](https://play.google.com/store/apps/details
 
 ### Screenshot
 
+[![Screenshot]()]()
+
 ## License
 2048 is licensed under the MIT license.
