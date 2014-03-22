@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2048</title>
+  <title>Any 2048</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link href="style/style.css" rel="stylesheet" type="text/css">
@@ -17,13 +17,13 @@
 <body>
   <div class="container">
     <div class="heading">
-      <h1 class="title">2048</h1>
+      <h1 class="title">Any 2048</h1>
       <div class="scores-container">
         <div class="score-container">0</div>
         <div class="best-container">0</div>
       </div>
     </div>
-    <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+    <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong> Or use any image you want.</p>
     <p></p>
     <p>Enter the url of any images and press GO!</p>
     <form id="urls">
@@ -107,17 +107,17 @@
   getPic();
 
   // links credit http://bulbapedia.bulbagarden.net/wiki/Main_Page
-  var pokemonLinks = ["http://cdn.bulbagarden.net/upload/7/76/Spr_5b_001.png",
-  "http://cdn.bulbagarden.net/upload/e/e1/Spr_5b_002.png",
-  "http://cdn.bulbagarden.net/upload/6/68/Spr_5b_003_m.png",
-  "http://cdn.bulbagarden.net/upload/0/0a/Spr_5b_004.png",
-  "http://cdn.bulbagarden.net/upload/0/09/Spr_5b_005.png",
-  "http://cdn.bulbagarden.net/upload/e/e1/Spr_5b_006.png",
-  "http://cdn.bulbagarden.net/upload/5/59/Spr_5b_007.png",
-  "http://cdn.bulbagarden.net/upload/0/0b/Spr_5b_008.png",
-  "http://cdn.bulbagarden.net/upload/3/3d/Spr_5b_009.png",
-  "http://cdn.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png",
-  "http://cdn.bulbagarden.net/upload/d/d0/Spr_5b_026_m.png"];
+  var pokemonLinks = ["./img/pokemon/bulbasaur.png",
+  "./img/pokemon/ivysaur.png",
+  "./img/pokemon/venasaur.png",
+  "./img/pokemon/charmander.png",
+  "./img/pokemon/chameleon.png",
+  "./img/pokemon/charizard.png",
+  "./img/pokemon/squirtle.png",
+  "./img/pokemon/wartortle.png",
+  "./img/pokemon/blastoise.png",
+  "./img/pokemon/pikachu.png",
+  "./img/pokemon/raichu.png"];
 
   function fillWithPokemon() {
     for (var i = 0; i <= 10; i++) {
